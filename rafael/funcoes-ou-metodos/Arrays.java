@@ -8,6 +8,22 @@ class Arrays {
 
 		exibeArray(array1);
 		exibeArray(array2);
+
+		int pares1 = contaPar(array1);
+		int pares2 = contaPar(array2);
+
+		System.out.println("Quantidade de pares do primeiro array: " + pares1);
+		System.out.println("Quantidade de pares do segundo array: " + pares2);
+	}
+
+	static int contaPar(int[] array) {
+		int pares = 0;
+		for(int i = 0; i < array.length; i++) {
+			if(array[i] % 2 == 0) {
+				pares++;
+			}
+		}
+		return pares;
 	}
 
 	static void preencheArray(int[] array) {
