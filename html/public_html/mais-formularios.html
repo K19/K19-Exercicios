@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Currículo</title>
+    </head>
+    <body>
+        <h1>Cadastro de Currículo</h1>
+        <form action="parametros.php" method="post">
+
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+
+                <label for="nome_id">Nome: </label>
+                <input
+									id="nome_id"
+									type="text"
+									name="nome"
+									placeholder="Digite o seu nome"
+									required>
+                <br>
+
+                <label for="email_id">Email: </label>
+                <input
+									id="email_id"
+									type="email"
+									name="email"
+									placeholder="Digite o seu email"
+									required>
+                <br>
+
+                <label for="nascimento_id">Data de Nascimento: </label>
+                <input
+									id="nascimento_id"
+									type="date"
+									name="nascimento"
+									required>
+                <br>
+
+                <label for="altura_id">Altura(m): </label>
+                <input
+									id="altura_id"
+									type="number"
+									name="altura"
+									step="0.01"
+									min="0"
+									max="2">
+                <br>
+
+                <label for="site_id">Site: </label>
+                <input
+									id="site_id"
+									type="url"
+									name="site"
+									placeholder="Facebook, Linkedin, Twitter">
+                <br>
+
+                <label for="estado_civil_id">Estado Civil: </label>
+                <select id="estado_civil_id" name="estado-civil">
+                    <option value="-1">Selecione</option>
+                    <option value="S">Solteiro</option>
+                    <option value="C">Casado</option>
+                    <option value="D">Divorciado</option>
+                    <option value="V">Viúvo</option>
+                </select>
+                <br>
+
+                <label>Sexo: </label>
+                <input
+									id="masculino_id"
+									type="radio"
+									name="sexo"
+									value="masculino">
+                <label for="masculino_id">Masculino</label>
+                <input
+									id="feminino_id"
+									type="radio"
+									name="sexo"
+									value="feminino">
+                <label for="feminino_id">Feminino</label>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+
+                <label for="cep_id">CEP: </label>
+                <input
+									id="cep_id"
+									type="text"
+									name="cep"
+									required>
+                <br>
+
+                <label for="endereco_id">Endereço: </label>
+                <input
+									id="endereco_id"
+									type="text"
+									name="endereco"
+									required>
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contato</legend>
+
+                <label for="telefone_id">Telefone: </label>
+                <input
+									id="telefone_id"
+									type="tel"
+									name="telefone">
+                <br>
+
+                <label for="celular_id">Celular: </label>
+                <input
+									id="celular_id"
+									type="tel"
+									name="celular">
+                <br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Conhecimentos</legend>
+
+                <input
+									id="html_id"
+									type="checkbox"
+									name="conhecimentos"
+									value="HTML">
+                <label for="html_id">HTML</label>
+
+                <input
+									id="css_id"
+									type="checkbox"
+									name="conhecimentos"
+									value="CSS">
+                <label for="css_id">CSS</label>
+
+                <input
+									id="js_id"
+									type="checkbox"
+									name="conhecimentos"
+									value="JS">
+                <label for="js_id">JavaScript</label>
+                <br>
+
+                <label for="mais_conhecimentos_id">Mais conhecimentos</label>
+                <textarea
+									id="mais_conhecimentos_id"
+									rows="10"
+									cols="20"
+									maxlength="500">Digite os seus conhecimentos</textarea>
+            </fieldset>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
