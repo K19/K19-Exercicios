@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Exercício de fieldset</title>
+	</head>
+	<body>
+		<form action="parametros.php" method="post">
+			<fieldset>
+				<legend>Dados Pessoais</legend>
+				<label for="nome_id">Nome: </label>
+				<input id="nome_id" type="text" name="nome">
+			</fieldset>
+			<fieldset>
+				<legend>Formação</legend>
+				<label for="curso_id">Curso: </label>
+				<input id="curso_id" type="text" name="curso">
+			</fieldset>
+			<fieldset>
+				<legend>Experiência</legend>
+				<label for="empresa_id">Empresa: </label>
+				<input id="empresa_id" type="text" name="empresa">
+			</fieldset>
+
+			<input type="submit" value="Enviar">
+		</form>
+	</body>
+</html>
