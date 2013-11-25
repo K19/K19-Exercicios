@@ -1,14 +1,64 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
 <!DOCTYPE html>
 <html>
-    <head>
-        <title></title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    </head>
-    <body>
-        <div>TODO write content</div>
-    </body>
+	<head>
+		<title>K19 Blog</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="css/principal.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js">
+		</script>
+		<script type="text/javascript" src="js/principal.js"></script>
+	</head>
+	<body>
+		<div id="main-wrapper">
+			<header id="main-header">
+				<h1>K19 Blog</h1>
+				
+				<nav>
+					<input id="main-menu-btn" type="button" value="Menu">
+					
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Arquivo</a></li>
+						<li><a href="#">Sobre</a></li>
+					</ul>
+				</nav>
+			</header>
+		
+			<section id="articles-container">
+				<!--
+					Quando o DIV abaixo estiver na área visível da página
+					um conjunto de posts será carregado via AJAX.
+				-->
+				<div id="lazy-load-point"></div>
+			</section>
+		
+			<aside>
+				<section id="archive-links">
+					<header>
+						<h1>Arquivo</h1>
+					</header>
+					
+					<ul>
+						<li><a href="#">Janeiro 2013</a></li>
+						<li><a href="#">Fevereiro 2013</a></li>
+						<li><a href="#">Março 2013</a></li>
+						<li><a href="#">Abril 2013</a></li>
+						<li><a href="#">Maio 2013</a></li>
+						<li><a href="#">Junho 2013</a></li>
+						<li><a href="#">Julho 2013</a></li>
+						<li><a href="#">Agosto 2013</a></li>
+						<li><a href="#">Setembro 2013</a></li>
+						<li><a href="#">Outubro 2013</a></li>
+						<li><a href="#">Novembro 2013</a></li>
+						<li><a href="#">Dezembro 2013</a></li>
+					</ul>
+				</section>
+			</aside>
+		    
+			<footer>
+				<small>&copy; K19 Treinamentos 2013.</small>
+			</footer>
+		</div>
+	</body>
 </html>
